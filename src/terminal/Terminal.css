@@ -1,0 +1,88 @@
+.terminal {
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    padding: 10px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Garde l'input en bas */
+    position: relative;
+}
+
+.output {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 60px;
+    scrollbar-width: thin; /* Pour les navigateurs comme Firefox */
+    scrollbar-color: #555 #1e1e1e; /* Couleur de la barre et du fond */
+}
+
+/* Scrollbar pour WebKit (Chrome, Safari, Edge) */
+.output::-webkit-scrollbar {
+    width: 5px; /* Largeur de la scrollbar */
+}
+
+.output::-webkit-scrollbar-track {
+    background: #1e1e1e; /* Couleur de l'arrière-plan de la scrollbar */
+}
+
+.output::-webkit-scrollbar-thumb {
+    background-color: #555; /* Couleur de la barre de défilement */
+    border-radius: 10px; /* Arrondir les bords de la barre */
+}
+
+.output::-webkit-scrollbar-thumb:hover {
+    background: #888; /* Couleur de la barre au survol */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+}
+
+.terminal-symbol {
+    margin-right: 10px;
+    font-family: Courier New, Courier, monospace;
+}
+
+input {
+    font-family: Courier New, Courier, monospace;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+
+.suggestions {
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 5px;
+    max-width: 100%;
+    z-index: 1000;
+}
+
+.suggestion {
+    padding: 2px 4px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.suggestion.selected {
+    background-color: #fff;
+    color: #000;
+}
+
+.suggestion:hover {
+    background-color: #555;
+}
