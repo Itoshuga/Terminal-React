@@ -24,7 +24,7 @@ export const commands = {
   anime,
   fortune,
   time,
-  todo,
+  // todo, // Not Working.
   roll,
   calc,
   clear,
