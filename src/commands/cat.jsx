@@ -1,6 +1,6 @@
 const cat = {
   description: "Displays a random cat image",
-  usage: "catimage",
+  usage: "cat",
   execute: async () => {
     const apiUrl = 'https://api.thecatapi.com/v1/images/search';
 

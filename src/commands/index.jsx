@@ -14,6 +14,8 @@ import news from './news';
 import crypto from './crypto';
 import joke from './joke';
 import cat from './cat';
+import smug from './smug';
+import hug from './hug';
 
 export const commands = {
   greet,
@@ -32,4 +34,6 @@ export const commands = {
   crypto,
   joke,
   cat,
+  smug,
+  hug
 };
